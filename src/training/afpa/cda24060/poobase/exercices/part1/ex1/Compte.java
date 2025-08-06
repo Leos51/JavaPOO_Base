@@ -1,4 +1,4 @@
-package training.afpa.cda24060.poobase.exercices.ex1;
+package training.afpa.cda24060.poobase.exercices.part1.ex1;
 
 public class Compte {
 
@@ -15,7 +15,10 @@ public class Compte {
         this.solde -= value;
     }
 
-    public double afficher(){
-        return solde;
+    public void afficher(){
+        String msg = "Solde : " + solde + " €";
+       System.out.println(
+               msg
+       );
     }
 }

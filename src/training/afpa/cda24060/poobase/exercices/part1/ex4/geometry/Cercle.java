@@ -1,9 +1,9 @@
-package training.afpa.cda24060.poobase.exercices.ex4.geometry;
+package training.afpa.cda24060.poobase.exercices.part1.ex4.geometry;
 
 public class Cercle {
     private Point centre;
     private double rayon;
-    final double pi = 3.14;
+    final double PI = 3.14159;
 
 
     public void setCentre(Point centre) {
@@ -21,22 +21,28 @@ public class Cercle {
     }
 
     public double perimetre() {
-        return 2 * getRayon() * pi;
+        return 2 * getRayon() * PI;
     }
 
     public double surface(){
-        return  Math.pow(getRayon(),2) * pi;
+        return  Math.pow(getRayon(),2) * PI;
 
     }
 
-    public void testAppartenance(Point p1){
-        boolean appartenance = getCentre() == p1;
-        String msg = appartenance? "OK":"Non OK";
-        System.out.println(msg);
+
+    public void testAppartenance(Point p1, Point centreCercle, double rayon) {
+        double dist = Math.sqrt(Math.pow(p1.getAbscisse() - centreCercle.getAbscisse(), 2) + Math.pow(p1.getOrdonnee() - centreCercle.getOrdonnee(), 2));
+        boolean appartenance = dist <= rayon;
+        String msg = appartenance?
+                "Le point appartient":
+                "Le point n'appartient pas";
+        System.out.println(msg + " au cercle.");
     }
 
     public void afficher(){
         System.out.println("Le centre est : "+getCentre());
         System.out.println("Le rayon : "+getRayon());
+        System.out.println("Le surface : "+surface());
+        System.out.println("Le perimetre : "+perimetre());
     }
 }

@@ -1,4 +1,4 @@
-package training.afpa.cda24060.poobase.exercices.part2.ex1_4_livre;
+package training.afpa.cda24060.poobase.exercices.part1_5.ex1_4_livre;
 
 import training.afpa.cda24060.poobase.exercices.utils.UserInput;
 

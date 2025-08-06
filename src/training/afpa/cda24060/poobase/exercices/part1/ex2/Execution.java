@@ -1,4 +1,4 @@
-package training.afpa.cda24060.poobase.exercices.ex2;
+package training.afpa.cda24060.poobase.exercices.part1.ex2;
 
 import static training.afpa.cda24060.poobase.exercices.utils.UserInput.inputDoubleValue;
 import static training.afpa.cda24060.poobase.exercices.utils.UserInput.inputStringValue;

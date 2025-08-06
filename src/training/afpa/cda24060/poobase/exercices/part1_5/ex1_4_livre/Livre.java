@@ -1,4 +1,4 @@
-package training.afpa.cda24060.poobase.exercices.part2.ex1_4_livre;
+package training.afpa.cda24060.poobase.exercices.part1_5.ex1_4_livre;
 
 public class Livre {
     private String titre, auteur;
@@ -72,8 +72,10 @@ public class Livre {
     }
 
     private boolean isPriceSet(){
-//        return this.prix != null;
+//        return this.prix != null
+//        return !(!(this.prix));
         return this.prix > 0;
     }
+
 
 }
