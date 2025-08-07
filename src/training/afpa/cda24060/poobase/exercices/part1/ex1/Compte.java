@@ -16,7 +16,7 @@ public class Compte {
     }
 
     public void afficher(){
-        String msg = "Solde : " + solde + " €";
+        String msg = "Solde : " + this.solde + " €";
        System.out.println(
                msg
        );

@@ -2,7 +2,7 @@ package training.afpa.cda24060.poobase.exercices.part2.ex2;
 
 public class Ville {
     private String nom;
-    protected int nbHab;
+    private int nbHab;
 
     public Ville(String nom) {
         this.nom = nom;
@@ -23,7 +23,7 @@ public class Ville {
     }
 
     public void setNbHab(int nbHab) {
-        if (nbHab < 0) {
+        if (!(nbHab > 0 )) {
             System.err.println("Un nombre d'habitant doit etre positif, la modification n'a pas été prise en compte.");
             if(!(this.nbHab > 0)){
                 this.nbHab = -1;

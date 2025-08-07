@@ -3,7 +3,7 @@ package training.afpa.cda24060.poobase.exercices.part1.ex4.geometry;
 public class Cercle {
     private Point centre;
     private double rayon;
-    final double PI = 3.14159;
+    final double PI = Math.PI;
 
 
     public void setCentre(Point centre) {

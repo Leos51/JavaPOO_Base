@@ -18,7 +18,7 @@ public class Main {
     private static void run(){
         /*PARTIE 2 */
        /* Exercice 1 */
-        Person person1 = new Person("Abraham Lincoln","us");
+//        Person person1 = new Person("Abraham Lincoln","us");
 //        Student student1 = new Student("robert C martin","UK", "CDA",2025,1000);
 //        Staff staff1 = new Staff("A2","fr","AFPA",2500);
 //        System.out.println(person1.toString());
@@ -27,28 +27,21 @@ public class Main {
 
 
         /*Exercice 2*/
-//        Ville v1 = new Ville("Lyon", 1500000);
-//        Ville v2 = new Ville("Bobigny");
-//
-//        Capitale c1 = new Capitale("Paris","France",10000000);
-//        Capitale c2 = new Capitale("Ouagadougou","Burkina-Faso");
-//
-//        System.out.println(v1.afficheToi());
-//        System.out.println(v2.afficheToi());
-//        System.out.println(c1.afficheToi());
-//        System.out.println(c2.afficheToi());
+        Ville v1 = new Ville("Lyon", 1500000);
+        Ville v2 = new Ville("Bobigny");
 
-int j=1;
-augmenter(j);
-        augmenter(j);
-        j++;
-System.out.println("j : " + j);
+        Capitale c1 = new Capitale("Paris","France",10000000);
+        Capitale c2 = new Capitale("Ouagadougou","Burkina-Faso");
+
+        System.out.println(v1.afficheToi());
+        System.out.println(v2.afficheToi());
+        System.out.println(c1.afficheToi());
+        System.out.println(c2.afficheToi());
+
+
 
 
 
         }
-        static void augmenter(int i){
-        i++;
-        System.out.println("i : " + i);
-        }
+
     }
