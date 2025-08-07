@@ -1,7 +1,7 @@
 package training.afpa.cda24060.poobase.exercices.part1.ex3;
 
 public class Rectangle {
-    private double longueur, largeur;
+    private double longueur, largeur ;
 
 
     public Rectangle(double longueur, double largeur){

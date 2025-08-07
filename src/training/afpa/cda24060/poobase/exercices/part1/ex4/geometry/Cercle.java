@@ -31,6 +31,7 @@ public class Cercle {
 
 
     public void testAppartenance(Point p1, Point centreCercle, double rayon) {
+
         double dist = Math.sqrt(Math.pow(p1.getAbscisse() - centreCercle.getAbscisse(), 2) + Math.pow(p1.getOrdonnee() - centreCercle.getOrdonnee(), 2));
         boolean appartenance = dist <= rayon;
         String msg = appartenance?

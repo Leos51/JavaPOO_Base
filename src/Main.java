@@ -3,6 +3,7 @@ import training.afpa.cda24060.poobase.exercices.part2.ex1.Staff;
 import training.afpa.cda24060.poobase.exercices.part2.ex1.Student;
 import training.afpa.cda24060.poobase.exercices.part2.ex2.Capitale;
 import training.afpa.cda24060.poobase.exercices.part2.ex2.Ville;
+import training.afpa.cda24060.poobase.exercices.utils.Clavier;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -27,21 +28,26 @@ public class Main {
 
 
         /*Exercice 2*/
-        Ville v1 = new Ville("Lyon", 1500000);
-        Ville v2 = new Ville("Bobigny");
-
-        Capitale c1 = new Capitale("Paris","France",10000000);
-        Capitale c2 = new Capitale("Ouagadougou","Burkina-Faso");
-
-        System.out.println(v1.afficheToi());
-        System.out.println(v2.afficheToi());
-        System.out.println(c1.afficheToi());
-        System.out.println(c2.afficheToi());
-
-
+//        Ville v1 = new Ville("Lyon", 1500000);
+//        Ville v2 = new Ville("Bobigny");
+//
+//        Capitale c1 = new Capitale("Paris","France",10000000);
+//        Capitale c2 = new Capitale("Ouagadougou","Burkina-Faso");
+//
+//        System.out.println(v1.afficheToi());
+//        System.out.println(v2.afficheToi());
+//        System.out.println(c1.afficheToi());
+//        System.out.println(c2.afficheToi());
 
 
 
+/*Test classe clavier*/
+
+
+System.out.println("entrer valeur");
+        Clavier c = new Clavier();
+        String red =c.lireString();
+        System.out.println(red);
         }
 
     }
