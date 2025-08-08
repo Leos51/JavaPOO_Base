@@ -3,9 +3,9 @@ package training.afpa.cda24060.poobase.exercices.utils;
 
     // classe fournissant des fonctions de lecture au clavier
 import java.io.* ;
-    public class Clavier
-    { public static String lireString ()   // lecture d’une chaine
-    { String ligne_lue = null ;
+    public class Clavier {
+        public static String lireString (){// lecture d’une chaine
+            String ligne_lue = null ;
         try
         { InputStreamReader lecteur = new InputStreamReader (System.in) ;
             BufferedReader entree = new BufferedReader (lecteur) ;
@@ -16,8 +16,8 @@ import java.io.* ;
         }
         return ligne_lue ;
     }
-        public static float lireFloat ()   // lecture d’un float
-        { float x=0 ;   // valeur a lire
+        public static float lireFloat () {// lecture d’un float
+            float x=0 ;   // valeur a lire
             try {
                 String ligne_lue = lireString();
                 x = Float.parseFloat(ligne_lue);
@@ -28,8 +28,8 @@ import java.io.* ;
             }
             return x ;
         }
-        public static double lireDouble ()   // lecture d’un double
-        { double x=0 ;   // valeur a lire
+        public static double lireDouble () {// lecture d’un double
+            double x=0 ;   // valeur a lire
             try
             { String ligne_lue = lireString() ;
                 x = Double.parseDouble(ligne_lue) ;
@@ -40,8 +40,8 @@ import java.io.* ;
             }
             return x ;
         }
-        public static int lireInt ()         // lecture d’un int
-        { int n=0 ;   // valeur a lire
+        public static int lireInt () {// lecture d’un int
+            int n=0 ;   // valeur a lire
             try
             { String ligne_lue = lireString() ;
                 n = Integer.parseInt(ligne_lue) ;

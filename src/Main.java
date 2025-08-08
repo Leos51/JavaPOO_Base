@@ -19,12 +19,12 @@ public class Main {
     private static void run(){
         /*PARTIE 2 */
        /* Exercice 1 */
-//        Person person1 = new Person("Abraham Lincoln","us");
-//        Student student1 = new Student("robert C martin","UK", "CDA",2025,1000);
-//        Staff staff1 = new Staff("A2","fr","AFPA",2500);
-//        System.out.println(person1.toString());
-//        System.out.println(student1.toString());
-//        System.out.println(staff1.toString());
+        Person person1 = new Person("Abraham Lincoln","us");
+        Student student1 = new Student("robert C martin","UK", "CDA",2025,1000);
+        Staff staff1 = new Staff("A2","fr","AFPA",2500);
+        System.out.println(person1.toString());
+        System.out.println(student1.toString());
+        System.out.println(staff1.toString());
 
 
         /*Exercice 2*/
@@ -43,11 +43,11 @@ public class Main {
 
 /*Test classe clavier*/
 
+//
+//System.out.println("entrer valeur");
+//        String red = Clavier.lireString();
+//        System.out.println(red);
 
-System.out.println("entrer valeur");
-        Clavier c = new Clavier();
-        String red =c.lireString();
-        System.out.println(red);
         }
 
     }

@@ -2,6 +2,8 @@ package training.afpa.cda24060.poobase.exercices.part1_5.ex1_4_livre;
 
 import training.afpa.cda24060.poobase.exercices.utils.UserInput;
 
+import java.util.ArrayList;
+
 public class TestLivre {
     public static void main(String[] args) {
         TestLivre testLivre = new TestLivre();
@@ -12,12 +14,13 @@ public class TestLivre {
         Livre livre2 = new Livre("Clean Code", "Robert C. Martin",320);
 
 //        livre1.setNbPages(0);
-        int nbTotalPages = calcTotalPages(livre1.getNbPages(), livre2.getNbPages());
+
+
         System.out.println("Auteur du livre 1: " + livre1.getAuteur());
         System.out.println("Auteur du livre 2: " + livre2.getAuteur());
         System.out.println("Nombre de pages du livre 1: " + livre1.getNbPages());
         System.out.println("Nombre de pages du livre 2: " + livre2.getNbPages());
-        System.out.println("Nombre total de pages : " + nbTotalPages);
+
 
         livre1.afficheToi();
 
@@ -26,7 +29,7 @@ public class TestLivre {
         livreSansParam.setTitre("NoTitle");
         livreSansParam.setAuteur("Anonymus");
         livreSansParam.setNbPages(300);
-
+int[][] tableau1 = {{1,2}, {1,5}};
         Livre livreAvec2Params = new Livre("Clean Architecture","robert c martin");
         livreSansParam.setNbPages(300);
 
@@ -39,12 +42,30 @@ public class TestLivre {
         livreSansParam.setPrix(value2);
         System.out.println("Prix : " + livreSansParam.getPrix());
 
+        ArrayList<Livre> books = new ArrayList<Livre>();
+        books.add(livre1);
+        books.add(livre2);
+        books.add(livreAvec2Params);
+        books.add(livreAvec3Params);
+        books.add(livreSansParam);
+
+       for (Livre livre : books) {
+           System.out.println(livre.getTitre() + " - " +  livre.getAuteur() + " - " + livre.getNbPages() + " - " + livre.getPrix());
+
+       }
+        int nbTotalPages = calcTotalPages(books);
+        System.out.println("Nombre total de pages : " + nbTotalPages);
+
     }
 
 
-
-
-    int calcTotalPages(int a, int b){
-        return a + b;
+    public int calcTotalPages(ArrayList<Livre> livres){
+        int sum = 0;
+        for (Livre livre : livres) {
+            sum += livre.getNbPages();
+        }
+        return sum;
     }
+
+
 }

@@ -1,5 +1,9 @@
 package training.afpa.cda24060.poobase.exercices.part2.ex2;
 
+import training.afpa.cda24060.poobase.exercices.part1_5.ex1_4_livre.Livre;
+
+import java.util.ArrayList;
+
 public class Capitale extends Ville {
     private String pays;
 
@@ -24,4 +28,6 @@ public class Capitale extends Ville {
     public String afficheToi() {
         return super.afficheToi() + "Capitale de : " + getPays();
     }
+
+
 }

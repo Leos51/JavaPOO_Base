@@ -1,12 +1,14 @@
 package training.afpa.cda24060.poobase.exercices.part1_5.ex1_4_livre;
 
+import java.util.ArrayList;
+
 public class Livre {
     private String titre, auteur;
     private int nbPages;
     private double prix;
 
     public Livre() {
-        System.out.println("Livre constructor sans param");
+
     }
 
     public Livre(String titre, String auteur) {
@@ -72,10 +74,12 @@ public class Livre {
     }
 
     private boolean isPriceSet(){
-//        return this.prix != null
+//        return this.prix != null;
 //        return !(!(this.prix));
         return this.prix > 0;
     }
+
+
 
 
 }
